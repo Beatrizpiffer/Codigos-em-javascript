@@ -1,0 +1,11 @@
+<script>
+        $(document).ready(function () {
+           $('#botaoHide').click(function () {
+               $('.blue').hide(2000);
+           });
+
+           $('#botaoshow').click(function (){
+               $('.blue').show(2000);
+           });
+        });
+ </script>
