@@ -1,0 +1,17 @@
+<p id="teste">Isso é um páragrafo de teste</p>
+    <p class="p-yellow">Outro parágrafo</p>
+    <div class="p-yellow">Texto dentro de uma div</div>
+    <hr>
+    <input type="text" placeholder="digite algo" style="padding: 50px;">
+    <button id="botao" style="padding:50px;">Clique aqui</button>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <script>
+        //jQuery
+    $(document).ready(function() {
+        $("#campotexto").focus(function(){
+          $(this).css("backgrond-color","yellow");
+        });
+    });
+    </script>
