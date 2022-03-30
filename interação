@@ -1,0 +1,64 @@
+  <style>
+        body {
+            text-align: center;
+        }
+
+        .d-none{
+            display: none;
+        }
+
+        .d-inline {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        
+        button {
+            padding: 40px;
+        }
+
+        .red {
+            background: red;
+        }
+        
+        .blue {
+            background: blue;
+        }
+
+        .green {
+            background: green;
+        }
+
+        #flip,
+         #panel{
+          padding:5px;  
+          text-align:center;
+          background-color: blueviolet;
+          color: white;
+          cursor: pointer;
+        }
+
+        #panel{
+            display: none;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="flip">Clique aqui para aparecer o painel</div>
+    <div id="panel">Painel Oculto</div>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <script>
+        
+       $(document).ready(function() {
+          $('#flip').click(function(){
+               $('#panel').slideToggle('slow');
+            });
+
+        });
+    </script>
