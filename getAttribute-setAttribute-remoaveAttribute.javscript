@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Js</title>
+    <style>
+      .red {color: red;}
+    </style>
+</head>
+    <body>
+     
+    <h1 id="title">Flamengo campeão</h1>
+    <!--Botão-->
+    <button id="btn-set">Set</button>
+    <button id="btn-remove">Remove</button>
+    <button id="btn-get">Get</button>
+
+    <p id="class"></p>
+
+    <script scr="js/app.js"></script>
+    
+    document.getElementById("btn-set").addEventListener("click", function(){
+    document.getElementById("title").setAttribute("class", "red")
+})
+
+document.getElementById("btn-remove").addEventListener("click", function(){
+    document.getElementById("title").setAttribute("class")
+
+})
+
+document.getElementById("btn-remove").addEventListener("click", function(){
+   var value = document.getElementById("title").getAttribute("class")
+   document.getElementById("class").innerHTML = value
+})
+    </body>
+</html>
